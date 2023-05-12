@@ -13,10 +13,10 @@ module "vpc" {
   enable_dns_support = true
 }
 
-  tags = {
-    Terraform = "true"
-    Environment = "Prod"
-  }
-  vpc_tags = {
-    Name = var.VPC_NAME
-  }
+tags = {
+  Terraform = "true"
+  Environment = "Prod"
+}
+vpc_tags = {
+  Name = var.VPC_NAME
+}
