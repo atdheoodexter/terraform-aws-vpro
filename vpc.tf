@@ -11,12 +11,14 @@ module "vpc" {
   single_nat_gateway = true
   enable_dns_hostnames = true
   enable_dns_support = true
-}
 
-tags = {
-  Terraform = "true"
-  Environment = "Prod"
-}
-vpc_tags = {
-  Name = var.VPC_NAME
+
+  tags = {
+    Terraform = "true"
+    Environment = "Prod"
+  }
+  
+  vpc_tags = {
+    Name = var.VPC_NAME
+  }
 }
